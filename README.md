@@ -56,4 +56,16 @@
       
       Run: nvm list
     
+## Giving the permission of a specific directory for read and write files:
 
+    => First go to the directory that you want to give the permission.
+      
+      Run: cd /home/nayem/Gigalogy
+
+    => After navigating to your working directory, you can use the "chmod" command to change permissions as needed.
+      
+      Run: sudo chmod -R 777 .
+
+      Note: The "." at the end represents the current directory ("Gigalogy" in this case), and the -R flag indicates recursive permission changes for all files and subdirectories within it. 
+            However, as mentioned earlier, using 777 permissions indiscriminately is generally not recommended for security reasons. 
+            You might want to consider more restrictive permissions based on your specific needs.
