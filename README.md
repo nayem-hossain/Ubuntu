@@ -69,3 +69,7 @@
       Note: The "." at the end represents the current directory ("Gigalogy" in this case), and the -R flag indicates recursive permission changes for all files and subdirectories within it. 
             However, as mentioned earlier, using 777 permissions indiscriminately is generally not recommended for security reasons. 
             You might want to consider more restrictive permissions based on your specific needs.
+
+
+## Clear RAM Memory Cache (or page cache):
+Run: sudo sh -c "sync; echo 1 > /proc/sys/vm/drop_caches"
