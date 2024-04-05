@@ -69,6 +69,12 @@
       Note: The "." at the end represents the current directory ("Gigalogy" in this case), and the -R flag indicates recursive permission changes for all files and subdirectories within it. 
             However, as mentioned earlier, using 777 permissions indiscriminately is generally not recommended for security reasons. 
             You might want to consider more restrictive permissions based on your specific needs.
+## raise DockerException(docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', PermissionError(13, 'Permission denied')):
+
+    => Solution:
+        Note: this may also happens if docker is not running on your machine. For linux with sytemd service manager, 
+        you could verify using command: 
+                                  systemctl status docker.service
 
 
 ## Clear RAM Memory Cache (or page cache):
