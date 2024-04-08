@@ -78,4 +78,8 @@
 
 
 ## Clear RAM Memory Cache (or page cache):
-Run: sudo sh -c "sync; echo 1 > /proc/sys/vm/drop_caches"
+    Run: sudo sh -c "sync; echo 1 > /proc/sys/vm/drop_caches"
+
+## Update pyenv:
+    cd ~/.pyenv
+    git pull
